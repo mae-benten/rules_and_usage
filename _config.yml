@@ -1,0 +1,41 @@
+# サイト設定
+title: "ルールと使い方"
+description: ""
+baseurl: "/rules_and_usage" # リポジトリ名と同じ
+url: "https://mae-benten.github.io" # あなたのGitHubユーザー名に変更
+
+# Jekyll設定
+markdown: kramdown
+highlighter: rouge
+sass:
+  style: compressed
+
+# プラグイン
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# テーマ（オプション）
+# theme: minima
+# remote_theme: pages-themes/minimal@v0.2.0
+
+# 除外ファイル
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+# デフォルト設定
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# ナビゲーション
+navigation:
+  - name: "ホーム"
+    link: "/"
+  - name: "GitHub"
+    link: "https://github.com/mae-benten/rules_and_usage"
